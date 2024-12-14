@@ -1,3 +1,9 @@
-remote-theme: no-style-please
-author: Liz
-title: "LIZP: Learn, Implement, Zone, and Practice"
+title:               "LIZP: Learn/Implement/Zone/Practice"
+url:                 https://blogs.lizmore.dev
+baseurl:             ''
+paginate:            5
+permalink:           pretty
+
+# About/contact
+author:
+  name:              Liz
