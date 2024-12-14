@@ -7,3 +7,5 @@ permalink:           pretty
 # About/contact
 author:
   name:              Liz
+
+plugins: [jekyll-paginate]
