@@ -1,6 +1,7 @@
 ---
 title: "Express Routes in Data and Travel: The Skip List Analogy"
 date: 2024-12-14
+layout: post
 ---
 
 My wife and I spent last week in Japan. As the legends says, the railway and subway systems in Japan are incredibly complicated. We couldn't have navigated without Google Maps. There is a concept called "れっしゃしゅべつ" (train type). In short, trains can have multiple types. Some of them stop at every station (e.g. "普通 (local)"), while others may only stop at select stations (e.g. "急行 (express)"). Naturally, with fewer stops, the train is faster.
