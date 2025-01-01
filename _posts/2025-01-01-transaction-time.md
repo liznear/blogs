@@ -53,13 +53,13 @@ The trade-off here is the slight delay between publishing and consuming events.
 
 ## Other Alternatives
 
-1. Use Transaction Commit Time
+### Use Transaction Commit Time
 
 Another approach is to use the transaction commit time (e.g. `pg_xact_commit_timestamp(xmin)` in PostgreSQL). Since this timestamp is only available once the transaction is committed, it requires an additional process to update the created column with the commit time.
 
 This extra process must be highly available and robust. Otherwise, rows in the queue table won't have this `created` column set and thus won't be processed. In my opinion, the added operational complexity outweighs the benefits.
 
-2. Use an Auto-Increment Sequence
+### Use an Auto-Increment Sequence
 
 You might think that ordering by an auto-incrementing sequence solves the issue. However, it suffers from the same fundamental problem. When a transaction begins, the sequence value is assigned immediately. Therefore, a later-committed transaction can have a smaller sequence ID.
 
